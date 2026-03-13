@@ -18,10 +18,19 @@ resource "azurerm_storage_account" "storage" {
   account_replication_type      = "LRS"
 }
 
-resource "azurerm_storage_container" "example" {
+resource "azurerm_storage_container" "container_john" {
   name                  = "johnalexander"
   storage_account_id  = azurerm_storage_account.storage.id 
   container_access_type = "container"
 }
+
+resource "azurerm_storage_container" "contaniner_alexander" {
+  name                  = "juanalejandro"
+  storage_account_id  = azurerm_storage_account.storage.id 
+  container_access_type = "container"
+}
+
+
+
 
 
