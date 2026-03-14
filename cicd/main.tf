@@ -19,7 +19,7 @@ resource "azurerm_storage_account" "storage" {
 }
 
 resource "azurerm_storage_container" "example" {
-  name                  = "platzibog"
+  name                  = "johnalexander"
   storage_account_id  = azurerm_storage_account.storage.id 
   container_access_type = "container"
 }
